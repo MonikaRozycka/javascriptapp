@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    color: azure;
+    background: linear-gradient(45deg, #022a78, #166e1c);
+    min-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+}
+
+.stats-container{
+    padding:30px;
+    border-radius: 20px;
+    border: 3px solid #4792de;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.details{
+    width: 100%;
+}
+
+.task.completed p {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#progress{
+    width: 0%;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#progressbar{
+    width: 100%;
+    height: 20px;
+    background-color: #057a67;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color:#057a67;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+    padding: 16px;
+    background-color: #057a67;
+    border: 1px solid #4792de;
+    color: azure;
+    border-radius: 20px;
+    outline: none;
+}
+
+button{
+    padding: 10px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #057a67;
+    color: azure;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+}
+::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+
+.icons img {
+    width: 22px;
+    cursor: pointer;
+}
+
